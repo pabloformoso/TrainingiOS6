@@ -21,6 +21,9 @@
 		6EB0B9A41615AA1800056E33 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EB0B9851615AA1800056E33 /* Foundation.framework */; };
 		6EB0B9AC1615AA1800056E33 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6EB0B9AA1615AA1800056E33 /* InfoPlist.strings */; };
 		6EB0B9AF1615AA1800056E33 /* TrainingiOS6Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB0B9AE1615AA1800056E33 /* TrainingiOS6Tests.m */; };
+		6EB0B9B91615AB8A00056E33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EB0B9B81615AB8A00056E33 /* Main.storyboard */; };
+		6EB0B9BD1615B84A00056E33 /* SWFlowCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB0B9BC1615B84A00056E33 /* SWFlowCollectionViewController.m */; };
+		6EB0B9C41615BD2A00056E33 /* SWFlowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB0B9C31615BD2A00056E33 /* SWFlowCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,11 @@
 		6EB0B9AB1615AA1800056E33 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6EB0B9AD1615AA1800056E33 /* TrainingiOS6Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrainingiOS6Tests.h; sourceTree = "<group>"; };
 		6EB0B9AE1615AA1800056E33 /* TrainingiOS6Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrainingiOS6Tests.m; sourceTree = "<group>"; };
+		6EB0B9B81615AB8A00056E33 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Views/Main.storyboard; sourceTree = "<group>"; };
+		6EB0B9BB1615B84A00056E33 /* SWFlowCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWFlowCollectionViewController.h; path = Flow/SWFlowCollectionViewController.h; sourceTree = "<group>"; };
+		6EB0B9BC1615B84A00056E33 /* SWFlowCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWFlowCollectionViewController.m; path = Flow/SWFlowCollectionViewController.m; sourceTree = "<group>"; };
+		6EB0B9C21615BD2A00056E33 /* SWFlowCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWFlowCell.h; path = Flow/SWFlowCell.h; sourceTree = "<group>"; };
+		6EB0B9C31615BD2A00056E33 /* SWFlowCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWFlowCell.m; path = Flow/SWFlowCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,9 +120,11 @@
 		6EB0B9891615AA1800056E33 /* TrainingiOS6 */ = {
 			isa = PBXGroup;
 			children = (
+				6EB0B9BA1615B80B00056E33 /* FlowExample */,
 				6EB0B9921615AA1800056E33 /* SWAppDelegate.h */,
 				6EB0B9931615AA1800056E33 /* SWAppDelegate.m */,
 				6EB0B98A1615AA1800056E33 /* Supporting Files */,
+				6EB0B9B81615AB8A00056E33 /* Main.storyboard */,
 			);
 			path = TrainingiOS6;
 			sourceTree = "<group>";
@@ -150,6 +160,17 @@
 				6EB0B9AA1615AA1800056E33 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6EB0B9BA1615B80B00056E33 /* FlowExample */ = {
+			isa = PBXGroup;
+			children = (
+				6EB0B9BB1615B84A00056E33 /* SWFlowCollectionViewController.h */,
+				6EB0B9BC1615B84A00056E33 /* SWFlowCollectionViewController.m */,
+				6EB0B9C21615BD2A00056E33 /* SWFlowCell.h */,
+				6EB0B9C31615BD2A00056E33 /* SWFlowCell.m */,
+			);
+			name = FlowExample;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,6 +249,7 @@
 				6EB0B9961615AA1800056E33 /* Default.png in Resources */,
 				6EB0B9981615AA1800056E33 /* Default@2x.png in Resources */,
 				6EB0B99A1615AA1800056E33 /* Default-568h@2x.png in Resources */,
+				6EB0B9B91615AB8A00056E33 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +286,8 @@
 			files = (
 				6EB0B9901615AA1800056E33 /* main.m in Sources */,
 				6EB0B9941615AA1800056E33 /* SWAppDelegate.m in Sources */,
+				6EB0B9BD1615B84A00056E33 /* SWFlowCollectionViewController.m in Sources */,
+				6EB0B9C41615BD2A00056E33 /* SWFlowCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
